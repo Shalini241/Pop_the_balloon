@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#FFC107</color>
+    <color name="primary_dark">#FFA000</color>
+    <color name="primary_light">#FFECB3</color>
+    <color name="accent">#FF4081</color>
+    <color name="ic_launcher_background">#95B0FE</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorOnPrimary">#2D3E70</color>
+    <color name="purple_700">#82B1FF</color>
+    <color name="teal_200">#90CAF9</color>
+    <color name="teal_700">#1976D2</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="text_date">#B22E2D2D</color>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AppTheme"
+    tools:context=".activities.HighScoreActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tvSno"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/original_surfer"
+            android:text="#"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/accent" />
+
+        <TextView
+            android:id="@+id/tvNameHeader"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/original_surfer"
+            android:gravity="center|start"
+            android:layout_weight="1"
+            android:text="Name"
+            android:textColor="@color/accent"
+            app:layout_constraintEnd_toStartOf="@+id/tvScoreHeader"
+            app:layout_constraintStart_toStartOf="@id/tvSno"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/tvScoreHeader"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/original_surfer"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Score"
+            android:textColor="@color/accent"
+            app:layout_constraintEnd_toStartOf="@+id/tvDateHeader"
+            app:layout_constraintStart_toEndOf="@id/tvNameHeader" />
+
+        <TextView
+            android:id="@+id/tvDateHeader"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/original_surfer"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Date"
+            android:textColor="@color/accent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvScoreHeader" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+        android:paddingBottom="16dp"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintVertical_bias="0"
+        tools:itemCount="4"
+        tools:listitem="@layout/item_player" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

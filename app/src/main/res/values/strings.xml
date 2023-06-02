@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pop Balloon</string>
+    <string name="score_label">Score:&#160;</string>
+    <string name="missed_label">Miss:&#160;</string>
+    <string name="play_game">Play game</string>
+    <string name="start_game">Start Again!</string>
+    <string name="high_score" translatable="false">0</string>
+    <string name="high_score_label">High score:&#160;</string>
+    <string name="game_over">Game over!</string>
+    <string name="ready">Ready!</string>
+    <string name="title_label">Pop only RED circles</string>
+    <string name="new_high_score_title">New High Score!</string>
+    <string name="level" translatable="false">0</string>
+    <string name="sound" translatable="false">Sound</string>
+    <string name="music" translatable="false">Music</string>
+</resources>
